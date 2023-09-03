@@ -1,40 +1,39 @@
-# Terminal Input Interface with Crossterm
+# Crossterm Piping and Interactive Input Example
 
 This example demonstrates how to use Rust and crossterm to accept both piped stdin input and interactive terminal input in a single CLI app. Given the scarcity of examples on piping into crossterm, I created this to provide an example for anyone trying to do the same.
+
 ## Features
 
-- **Piped `stdin` Input**: Seamlessly accept input piped from other commands or scripts.
-- **Interactive Terminal Input**: Engage with a responsive terminal interface, typing and interacting in real-time.
-- **Colorful UI**: Distinct colors differentiate prompts, user input, and system responses, enhancing readability.
-- **Command Handling**: Commands like `exit` and `quit` are recognized, allowing for a graceful application termination.
-- **Keyboard Shortcuts**: Utilize `CTRL+C` to exit swiftly and the backspace key for text corrections.
+- **Piped `stdin` Input**: Accept input directly from another command using pipes.
+- **Interactive Terminal Input**: Type and interact directly within the terminal.
+- **Colored UI**: Different colors for prompts, user input, and system responses for clarity.
+- **Command Handling**: Recognizes `exit` and `quit` commands for easy termination.
+- **Keyboard Support**: Use `CTRL+C` to exit and the backspace key for text corrections.
 
-## Installation & Usage
+## Usage
 
-1. **Prerequisites**: Ensure Rust and Cargo are part of your development toolkit. If they're missing, acquire them from [rustup.rs](https://rustup.rs/).
-
-2. **Clone the Repository**:
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/cosmikwolf/terminal-input-interface.git
    cd terminal-input-interface
    ```
 
-3. **Build & Run**:
+2. **Run the Application**:
    ```bash
    cargo run
    ```
 
-4. **Experience Piped Input**:
+3. **Experience Piped Input**:
    ```bash
-   echo "Hello from the other side" | cargo run
+   echo "Sample piped input" | cargo run
    ```
 
 ## Dependencies
 
-- [crossterm](https://crates.io/crates/crossterm): A cornerstone crate that empowers the creation of cross-platform terminal interfaces.
+- [crossterm](https://crates.io/crates/crossterm): Used for creating the terminal interface.
 
 ## License
 
-This project proudly carries the MIT License. Dive into the [LICENSE](LICENSE) file for more details.
+This project is under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
