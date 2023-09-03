@@ -4,7 +4,6 @@ This example demonstrates how to use Rust and crossterm to accept both piped std
 
 the key to using using piped inputs is to use the `use-dev-tty` feature of crossterm. This allows you to use the `input()` function to read from stdin. Without this feature, the `input()` function will not work with piped input.
 
-```rust
 
 ## Features
 
