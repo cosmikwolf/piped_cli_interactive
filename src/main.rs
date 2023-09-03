@@ -4,7 +4,7 @@ use crossterm::{
     execute,
     ExecutableCommand,
     style::{Color, Print, SetForegroundColor},
-    terminal::{self, ClearType, EnterAlternateScreen, LeaveAlternateScreen},
+    terminal::{self, EnterAlternateScreen, LeaveAlternateScreen},
     tty::IsTty,
 };
 use std::io::{self, Read, Write};
