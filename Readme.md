@@ -1,7 +1,3 @@
-Certainly! Here's a revised README tailored to your GitHub username and with a more expert-like introduction:
-
----
-
 # Terminal Input Interface with Crossterm
 
 This example demonstrates how to use Rust and crossterm to accept both piped stdin input and interactive terminal input in a single CLI app. Given the scarcity of examples on piping into crossterm, I created this to provide an example for anyone trying to do the same.
@@ -37,14 +33,8 @@ This example demonstrates how to use Rust and crossterm to accept both piped std
 
 - [crossterm](https://crates.io/crates/crossterm): A cornerstone crate that empowers the creation of cross-platform terminal interfaces.
 
-## Contributing
-
-Your insights and expertise are welcome! Open issues or pull requests if you have enhancements, fixes, or extensions in mind.
-
 ## License
 
 This project proudly carries the MIT License. Dive into the [LICENSE](LICENSE) file for more details.
 
 ---
-
-This README should better reflect the expert nature of the application and provides a direct link to your GitHub repository.
