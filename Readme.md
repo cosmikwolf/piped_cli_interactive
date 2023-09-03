@@ -2,6 +2,10 @@
 
 This example demonstrates how to use Rust and crossterm to accept both piped stdin input and interactive terminal input in a single CLI app. Given the scarcity of examples on piping into crossterm, I created this to provide an example for anyone trying to do the same.
 
+the key to using using piped inputs is to use the `use-dev-tty` feature of crossterm. This allows you to use the `input()` function to read from stdin. Without this feature, the `input()` function will not work with piped input.
+
+```rust
+
 ## Features
 
 - **Piped `stdin` Input**: Accept input directly from another command using pipes.
